@@ -1,0 +1,35 @@
+{
+  "name": "hw6-backend-wayhone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiceWebDevCourse/hw6-backend-Wayhone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiceWebDevCourse/hw6-backend-Wayhone/issues"
+  },
+  "homepage": "https://github.com/RiceWebDevCourse/hw6-backend-Wayhone#readme",
+  "dependencies": {
+    "cloudinary": "^1.27.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "isomorphic-fetch": "^3.0.0",
+    "md5": "^2.3.0",
+    "mongoose": "^6.0.12",
+    "multer": "^1.4.3",
+    "passport": "^0.5.0",
+    "passport-google-oauth": "^2.0.0",
+    "redis": "^3.1.2"
+  }
+}
