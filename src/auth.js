@@ -262,7 +262,12 @@ function linkAccount(req, res) {
                         // Re-Login
                         req.logout()
                         let sid = md5(user.hash + user.salt); 
-                        res.cookie(cookieKey, sid, { maxAge: 3600 * 1000, httpOnly: true });
+                        res.cookie(cookieKey, sid, { 
+                            maxAge: 3600 * 1000, 
+                            httpOnly: true,
+                            secure: true,
+                            sameSite: "none",
+                        });
                         redis.hmset('sessions', sid, username);
 
                         let msg = {username: username, result: 'success'};
