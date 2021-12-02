@@ -23,7 +23,6 @@ function generateUniqueAccountName(proposedName) {
 } 
 
 module.exports = (app) => {
-    app.enable('trust proxy');
     app.use(session({
         secret: 'doNotGuessTheSecret',
         resave: true,

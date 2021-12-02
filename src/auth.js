@@ -100,7 +100,12 @@ function login(req, res) {
             let sid = md5(user.hash + user.salt); 
 
             // Adding cookie for session id
-            res.cookie(cookieKey, sid, { maxAge: 3600 * 1000, httpOnly: true });
+            res.cookie(cookieKey, sid, { 
+                maxAge: 3600 * 1000, 
+                httpOnly: true,
+                secure: true,
+                sameSite: "none", 
+            });
 
             // sessionUser[sid] = username
             // Move the in-memory session map to a Redis store
