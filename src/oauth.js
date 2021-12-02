@@ -102,8 +102,8 @@ module.exports = (app) => {
     // authentication has failed.
     app.get('/auth/google/callback',
         passport.authenticate('google', { 
-            successRedirect: 'wx19ricebook.surge.sh/main',
-            failureRedirect: 'wx19ricebook.surge.sh' ,
+            successRedirect: 'https://wx19ricebook.surge.sh/main',
+            failureRedirect: 'https://wx19ricebook.surge.sh' ,
             // successRedirect: 'http://localhost:3001/main', 
             // failureRedirect: '/' 
         }));
