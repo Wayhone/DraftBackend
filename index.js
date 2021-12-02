@@ -14,7 +14,7 @@ const hello = (req, res) => {
 
 var corsOptions = {
     // origin: 'http://localhost:3001',
-    origin: 'wx19ricebook.surge.sh',
+    origin: 'https://wx19ricebook.surge.sh',
     credentials: true,
     exposedHeaders: ["set-cookie"]
 }
