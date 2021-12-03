@@ -63,12 +63,12 @@ module.exports = (app) => {
                             username: uniqueName,
                             headline: "",
                             avatar: profile.photos[0].value,
+                            email: profile.emails[0].value,
                             following: [],
                         }).save()
     
                         new User({
                             username: uniqueName,
-                            email: profile.emails[0].value,
                             googleId: profile.id,
                             googleToken: accessToken
                         }).save(function(err, newUser) {
