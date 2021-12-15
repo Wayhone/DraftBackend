@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://rice_wx19:ne7wZ4DkjQXhIpeA@cluster0.ae38z.mongodb.net/ricebookFinal?retryWrites=true&w=majority";
+const uri = "mongodb+srv://xxx.mongodb.net/xxxxxxxxx?retryWrites=true&w=majority";
 
 // const connector =   
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
