@@ -45,8 +45,8 @@ module.exports = (app) => {
     });
 
     passport.use(new GoogleStrategy({
-            clientID: '1034567896941-bedfrlrcubgce0qhnbs0n8hcs43fb5hm.apps.googleusercontent.com',
-            clientSecret: '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',
+            clientID: 'zzxxxxzzx.apps.googleusercontent.com',
+            clientSecret: 'xxxxxx',
             callbackURL: "/auth/google/callback"
         },
         function(accessToken, refreshToken, profile, done) {
@@ -102,8 +102,8 @@ module.exports = (app) => {
     // authentication has failed.
     app.get('/auth/google/callback',
         passport.authenticate('google', { 
-            successRedirect: 'https://wx19ricebook.surge.sh/main',
-            failureRedirect: 'https://wx19ricebook.surge.sh' ,
+            successRedirect: 'https://xxx.surge.sh/main',
+            failureRedirect: 'https://xxx.surge.sh' ,
             // successRedirect: 'http://localhost:3001/main', 
             // failureRedirect: '/' 
         }));
